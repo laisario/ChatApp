@@ -1,0 +1,126 @@
+body {
+  background-color: #7ea3f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0; */
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+  justify-content: center;
+  width: 500px;
+}
+
+a {
+ text-decoration: none;
+ color: #1957db;
+ font-size:large;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #1957db;
+}
+
+
+#header {
+  display: flex;
+  border-bottom: solid 1px #7ea3f1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+#header h4{
+  margin: 0px;
+  color: #011a51;
+}
+
+.chat__item__container {
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: space-between;
+}
+
+#textarea  input {
+  width: 350px; 
+  height: 50px;
+  border: 1px solid #ccc;
+  border: solid 1px #1957db;
+  border-radius: 10px;
+  color: #011a51;
+}
+
+
+#textarea button {
+  background-color: #7ea3f1;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+}
+
+#textarea button:hover {
+  background-color: #1957db;
+}
+
+#user_send_message {
+ margin: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.button-login {
+  width: 50%;
+  padding: 10px;
+  background-color: #1957db; /* Cor do Detalhe */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-login:hover {
+  background-color: #0e3a8f; /* Cor Escura ao Passar o Mouse */
+}
+
+.form input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #1957db; /* Cor do Detalhe */
+  border-radius: 4px;
+}
+
+.login-title {
+  margin-top: 50px;
+  color: white;
+  margin: 15px;
+}

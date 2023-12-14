@@ -1,12 +1,21 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'chat/stryle.css' %}">
+</head>
+
 <body>
-    <form method="post">
-        {% csrf_token %}
-        {{form.as_p}}
-        <br>
-        <button type="submit">Login</button>
-    </form>
+    <h1 class="login-title">Friends Talk: App de mensagens</h1>
+    <div class="container">
+        <form class="form" method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <br>
+            <button class="button-login" type="submit">Login</button>
+        </form>
+    </div>
 </body>
+
 </html>
