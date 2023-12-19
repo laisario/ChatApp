@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friends Talk</title>
-  <link rel="stylesheet" href="{% static 'chat/stryle.css' %}">
+  <link rel="stylesheet" href="{% static 'chat/style.css' %}">
 </head>
 <body>
+  <img src="{% static 'logo.png' %}" id="img" alt="Logo app">
   <div class="container">
     <header id="header">
       <div class="header-menu">
-        <h1>Friends Talk!</h1>
         {% if request.user.is_authenticated %}
         <a href="{% url 'logout-user' %}">Encerrar ↪</a>
         {% endif %}

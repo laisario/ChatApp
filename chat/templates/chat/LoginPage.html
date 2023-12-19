@@ -3,18 +3,20 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="{% static 'chat/stryle.css' %}">
+    <link rel="stylesheet" href="{% static 'login/style.css' %}">
 </head>
 
 <body>
-    <h1 class="login-title">Friends Talk: App de mensagens</h1>
-    <div class="container">
-        <form class="form" method="post">
-            {% csrf_token %}
-            {{form.as_p}}
-            <br>
-            <button class="button-login" type="submit">Login</button>
-        </form>
+    <div class="container-login">
+        <div class="container">
+            <img src="{% static 'logo.png' %}" id="img" alt="Logo app">
+            <form class="form" method="post">
+                {% csrf_token %}
+                {{form}}
+                <br>
+                <button class="button-login" type="submit">Acessar</button>
+            </form>
+        </div>
     </div>
 </body>
 
